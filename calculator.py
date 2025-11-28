@@ -1,28 +1,28 @@
-def scitani(a,b):
+def addition(a,b):
     return a + b
 
-def odcitani(a,b):
+def subtraction(a,b):
     return a - b
 
-def nasobeni(a,b):
+def multiplication(a,b):
     return a * b
 
-def deleni(a,b):
+def division(a,b):
     if a == 0 or b == 0:
-        return "Chyba: Nulou nelze dělit"
+        return "Error: Cannot divide by zero"
     return a / b
 
-a = int(input("Zadej první číslo: "))
-b = int(input("Zadej první číslo: "))
-operace = input("Zadej známenko pro operaci(+,-,*,/): ")
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+operation = input("Enter a mark for operation(+,-,*,/): ")
 
-if operace == "+":
-    print(f"Výsledek sčítání je: {scitani(a,b)}")
-elif operace == "-":
-    print(f"Výsledek odčítání je: {odcitani(a,b)}")
-elif operace == "*":
-    print(f"Výsledek násobení je: {nasobeni(a,b)}")
-elif operace == "/":
-    print(f"Výsledek dělení je: {deleni(a,b)}")
+if operation == "+":
+    print(f"Addition result is: {addition(a,b)}")
+elif operation == "-":
+    print(f"Subtraction result is: {subtraction(a,b)}")
+elif operation == "*":
+    print(f"Multiplication result is: {multiplication(a,b)}")
+elif operation == "/":
+    print(f"The result of the division is: {division(a,b)}")
 else:
-    print("Chyba: Musíš zadat znaménko")
+    print("Error: You must enter a sign")
