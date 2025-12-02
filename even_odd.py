@@ -12,9 +12,9 @@ while True:
     else:
         print("Result: Odd")
 
-    potvrzeni = input("If you want to continue say YES if not say END: ")
+    confirmation = input("If you want to continue say YES if not say END: ")
 
-    if potvrzeni == "END":
+    if confirmation == "END":
         break
     else:
         continue
